@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'messages/index'
+  get 'kids/index'
+  root to: "kids#index"
+  resources :kids 
+  devise_for :users
+  resources :rooms, only: [:new, :create, :destroy] 
+  resources :messages, only: [:index, :create]
 end

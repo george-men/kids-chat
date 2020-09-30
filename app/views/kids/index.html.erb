@@ -1,0 +1,45 @@
+<div class="screen">
+  <div class="title-bar">
+    <%= render "top_title" %>
+  </div>
+
+  <div class="main-screen">
+    <div class="image1">
+      <%= image_tag 'image3.png', width: "180px", height: "180px" %>
+    </div>
+
+    <div class="image2">
+      <%= image_tag 'image1.png', width: "600px", height: "150px" %>
+    </div>
+
+    <div class="room">
+      <div class="sign-up">
+        <% if user_signed_in? %>
+          <span><%= link_to current_user.name, "#", class: "login" %></span> 
+          <span><%= link_to 'ろぐあうと', destroy_user_session_path, method: :delete, class: "registration" %></span> 
+        <% else %>
+          <span><%= link_to 'ろぐいん', new_user_session_path, class: "login" %></span>
+          <span><%= link_to 'とうろく', new_user_registration_path, class: "registration" %></span>
+        <% end %>
+      </div>
+
+      <div class="progress">
+        <span class="progress-progress">➡️</span>
+      </div>
+
+      <div class="room-access">
+        <a href="#">
+          <span class="room-room">るーむ</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="image3">
+      <%= image_tag 'image5.png', width: "250px", height: "150px" %>
+    </div>
+
+    <div class="image4">
+      <%= image_tag 'image6.png', width: "300px", height: "200px" %>
+    </div>
+  </div>
+</div>
