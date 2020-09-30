@@ -46,4 +46,121 @@
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image1{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.image2{
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.image3{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.image4{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.room{
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up{
+  border: solid 1px;
+  background-color: greenyellow;
+  width: 300px;
+  height: 150px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.login{
+  padding: 15px;
+  margin-right: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background-color: tomato;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.registration{
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background-color: tomato;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.progress{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-progress{
+  font-size: 100px;
+  color: hotpink;
+}
+
+.room-access{
+  border: solid 1px;
+  background-color: greenyellow;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.room-room{
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background-color: tomato;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
 }
