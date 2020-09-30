@@ -1,0 +1,49 @@
+.screen{
+  background-color: orange;
+}
+
+.title-view {
+  height: 200px;
+  background-image: radial-gradient(ellipse, white, yellow );
+  border: solid 5px orange;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.title-space{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 15px 10px 10px 10px;
+}
+
+.title-left{
+  position: absolute;
+  left: 30px;
+}
+
+.main-title{
+  font-size: 120px;
+  font-family: fantasy;
+  color: hotpink;
+  padding-top: 70px;
+}
+
+.title-right{
+  position: absolute;
+  right: 30px;
+}
+
+.main-screen{
+  height: calc(100vh - 200px);
+  border: solid 5px orange;
+  background-image: radial-gradient(ellipse, white, paleturquoise );
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
