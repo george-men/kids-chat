@@ -12,7 +12,7 @@
       <%= image_tag 'image1.png', width: "600px", height: "150px" %>
     </div>
 
-    <div class="room">
+    <div class="rom">
       <div class="sign-up">
         <% if user_signed_in? %>
           <span><%= link_to current_user.name, "#", class: "login" %></span> 
@@ -28,7 +28,7 @@
       </div>
 
       <div class="room-access">
-        <a href="#">
+        <a href="/rooms">
           <span class="room-room">るーむ</span>
         </a>
       </div>

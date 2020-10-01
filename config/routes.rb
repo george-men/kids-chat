@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "kids#index"
   resources :kids 
   devise_for :users
-  resources :rooms, only: [:new, :create, :destroy] 
-  resources :messages, only: [:index, :create]
+  resources :rooms, only: [:index, :new, :create, :destroy] do
+    resources :messages, only: [:index, :create]
+  end
 end
