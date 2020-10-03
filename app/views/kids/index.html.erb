@@ -29,7 +29,9 @@
 
       <div class="room-access">
         <a href="/rooms">
+          <% if user_signed_in? %>
           <span class="room-room">るーむ</span>
+          <% end %>
         </a>
       </div>
     </div>

@@ -2,7 +2,7 @@
   display: flex;
 }
 .side-bar {
-  background-color: #253141;
+  background-color: orange;
   width: 300px;
   height: 100vh;
 }
@@ -10,34 +10,47 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: #253141;
+  background-image: radial-gradient(ellipse, white, tomato );
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: solid 5px orange;
 }
 
 .header-name a{
   font-size: 16px;
-  color: #FAFAFA;
+  color: black;
   text-decoration: none;
 }
 
 .create-room {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .create-room a {
-  border: 1px solid lightblue;
+  border: 1px solid black;
   padding: 14px;
-  color: deepskyblue;
+  color: black;
   text-decoration: none;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: white;
 }
 
 .rooms {
-  background-color: #2f3e51;
+  background-image: radial-gradient(ellipse, white, white );
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: solid 5px orange;
+  border-bottom: solid 5px orange;
+  border-right: solid 5px orange;
 }
 
 .room {
@@ -46,11 +59,11 @@
 
 .room-name a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .chat {
-  background-color: #ffffff;
+  background-color: orange;
   width: calc(100% - 300px);
 }
 
@@ -59,6 +72,10 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  background-image: radial-gradient(ellipse, white, yellow );
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: solid 5px orange;
 }
 
 .header-title {
@@ -73,9 +90,14 @@
 
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  border: 1px solid black;
+  color: black;
   padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: white;
 }
 
 .messages {
@@ -83,6 +105,9 @@
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
+  border-left: solid 5px orange;
+  border-right: solid 5px orange;
+  background-image: radial-gradient(ellipse, white, lightblue );
 }
 
 .message {
@@ -115,10 +140,15 @@
 }
 
 .form {
-  background-color: #DDDDDD;
+  background-color: lightgreen;
   height: 90px;
   padding: 20px 40px;
   display: flex;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: solid 5px orange;
+  border-bottom: solid 5px orange;
+  border-right: solid 5px orange;
 }
 
 .form-input {
@@ -156,4 +186,11 @@
 
 .hidden {
   display: none;
+}
+
+.right-space{
+  width: calc(100vw - 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
